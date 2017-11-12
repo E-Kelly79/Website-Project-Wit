@@ -495,6 +495,85 @@ About Us
         transform: scale(1.05);
         z-index: 20; }
 
+.login-block {
+  background: -webkit-linear-gradient(to bottom, #fdbb2d, #22c1c3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fdbb2d, #22c1c3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  float: left;
+  width: 100%;
+  padding: 5rem 0;
+  margin-bottom: 2rem; }
+  .login-block .banner-sec {
+    background: url(https://static.pexels.com/photos/33972/pexels-photo.jpg) no-repeat left bottom;
+    background-size: cover;
+    min-height: 500px;
+    border-radius: 0 10px 10px 0;
+    padding: 0; }
+    .login-block .banner-sec .carousel-inner {
+      border-radius: 10px; }
+    .login-block .banner-sec .carousel-inner {
+      border-radius: 10px; }
+    .login-block .banner-sec .carousel-caption {
+      text-align: left;
+      left: 5%; }
+  .login-block h2 {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff; }
+    .login-block h2:after {
+      content: " ";
+      width: 100px;
+      height: 5px;
+      background: #fff;
+      display: block;
+      margin-top: 20px;
+      border-radius: 3px;
+      margin-left: auto;
+      margin-right: auto; }
+  .login-block .login-sec {
+    padding: 50px 30px;
+    position: relative; }
+    .login-block .login-sec .copy-text {
+      position: absolute;
+      width: 80%;
+      bottom: 20px;
+      font-size: 13px;
+      text-align: center; }
+      .login-block .login-sec .copy-text i {
+        color: #FEB58A; }
+      .login-block .login-sec .copy-text a {
+        color: #E36262; }
+    .login-block .login-sec label {
+      font-size: 2rem;
+      color: #fff; }
+    .login-block .login-sec input {
+      height: 4rem;
+      font-size: 2.5rem; }
+    .login-block .login-sec .btn-login {
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: #7ed56f;
+      color: #fff;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      transition: all 0.2s;
+      border-radius: 3rem;
+      animation: moveInBottom 2s ease-out;
+      font-size: 1.6rem; }
+      .login-block .login-sec .btn-login:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+      .login-block .login-sec .btn-login:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+  .login-block .banner-text {
+    width: 70%;
+    position: absolute;
+    bottom: 40px;
+    padding-left: 20px; }
+
 /*Animations*/
 @keyframes moveInLeft {
   0% {

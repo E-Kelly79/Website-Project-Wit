@@ -694,6 +694,127 @@ About Us
     }
 }
 
+.login-block{
+    background: -webkit-linear-gradient(to bottom, $summer-orange, $summer-green);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, $summer-orange, $summer-green); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float:left;
+    width:100%;
+    padding : 5rem 0;
+    margin-bottom: 2rem;
+
+    .banner-sec{
+       background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; 
+       background-size:cover; 
+       min-height:500px; 
+       border-radius: 0 10px 10px 0; 
+       padding:0;
+
+
+        .carousel-inner{
+            border-radius: 10px;
+        }
+    
+        .carousel-inner{
+            border-radius: 10px;
+        }
+    
+        .carousel-caption{
+            text-align:left; 
+            left:5%;
+        }
+    }
+
+    h2{
+        margin-bottom:30px; 
+        font-weight:800; 
+        font-size:30px; 
+        color: $color-white;
+
+        &:after{
+            content:" "; 
+            width:100px; 
+            height:5px; 
+            background:$color-white;
+            display:block; 
+            margin-top:20px; 
+            border-radius:3px; 
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
+
+    .login-sec{
+        padding: 50px 30px; 
+        position:relative;
+
+        .copy-text{
+            position:absolute;
+            width:80%;
+            bottom:20px;
+            font-size:13px; 
+            text-align:center;
+
+            i{
+                color:#FEB58A;
+            }
+
+            a{
+                color:#E36262;
+            }
+        }
+
+        label{
+            font-size: 2rem;
+            color: $color-white;
+        }
+
+        input{
+            height: 4rem;
+            font-size: 2.5rem;
+        }
+
+        .btn-login{
+                text-transform: uppercase;
+                text-decoration: none;
+                background-color: $color-primary-light;
+                color: $color-white;
+                padding: 1.5rem 4rem;
+                display: inline-block;
+                transition: all 0.2s;
+                border-radius: 3rem;
+                animation: moveInBottom 2s ease-out;
+                font-size: 1.6rem;
+            
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 1rem 2rem rgba($color-black,0.3);
+            }
+            
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 0.5rem 1rem rgba($color-black,0.3);
+            }
+
+
+        }
+
+
+       
+    }
+
+   
+
+    .banner-text{
+        width:70%; 
+        position:absolute; 
+        bottom:40px; 
+        padding-left:20px;
+    }
+   
+
+    
+}
+
 
 
 
