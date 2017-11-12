@@ -15,6 +15,31 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <!--Disclaimer-->
+      <div class="modal fade" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Disclaimer</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id="top">
+                    <ol class="disclaimer-text">
+                        <li>This website is part of a college project – and is for student project purposes only.</li>
+                        <li>The site does not have full functionality and is NOT intended for commercial or public use.</li>
+                        <li>All material contained in this site is fully referenced on a separate page within the site.</li>
+                        <li>We make no representations or warranties of any kind, about the completeness,accuracy.
+                        reliability, suitability or availability with respect to the website or the information within the site.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
         
         <div class="container-fluid">
@@ -27,16 +52,31 @@
                     <nav class="navigation_nav">
                         <ul class="navigation_list">
                             <li class="navigation_item">
-                                <a href="#" class="navigation_link">About Us</a>
+                                <a href="about.html" class="navigation_link">About Us</a>
                             </li>
                             <li class="navigation_item">
-                                <a href="#" class="navigation_link">Popular Tours</a>
+                                <a href="#" class="navigation_link">Log in</a>
                             </li>
                             <li class="navigation_item">
-                                <a href="#" class="navigation_link">Benfits</a>
+                                <a href="#" class="navigation_link">Register</a>
                             </li>
                             <li class="navigation_item">
-                                <a href="#" class="navigation_link">Book Now</a>
+                                <a href="#" class="navigation_link">Contact Us</a>
+                            </li>
+                            <li class="navigation_item">
+                                <a href="#" class="navigation_link">Book Adventure</a>
+                            </li>
+                            <!-- <li class="navigation_item">
+                                <a href="#" class="navigation_link">Bike Tours</a>
+                            </li>
+                            <li class="navigation_item">
+                                <a href="#" class="navigation_link">Beach Tours</a>
+                            </li>
+                            <li class="navigation_item">
+                                <a href="#" class="navigation_link">Hiking Tours</a>
+                            </li> -->
+                            <li class="navigation_item">
+                                <a href="#" class="navigation_link">References</a>
                             </li>
                         </ul>
                     </nav>
@@ -191,12 +231,66 @@
 
                     </div>
                 </section>
+                <footer class="footer clearfix">
+                    <div class="footer__logo-box">
+                        <img src="img/logo1.png" alt="" class="footer__logo-box">
+                    </div>
+                    <div class="row">
+                        <div class="col-md ">
+                            <div class="footer__navigation">
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer_link">Home</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer_link">About Us</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer_link">Log In</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer_link">Register</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer_link">Contact Us</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer_link">Book Adventure</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer_link">Bike Tours</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer_link">Beach Tours</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer_link">Hicking Tours</a>
+                                    </li>
+                                    
+                        
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer__copyright">
+                                Built By <a href="#" class="footer_link"> Eoin Kelly </a> & <a href="#" class="footer_link"> Keith Maher </a> Copyright &copy; 2017
+                                <div class="center-text mt-3">
+                                        <a href="#" class="btn btn-green" id="disclaimer" data-toggle="modal" data-target="#disclaimerModal">Disclaimer</a>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </footer>
 
             </main>
         </div>
 
+        
+
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
