@@ -67,6 +67,28 @@ Helpers
     box-shadow: 0 0.5rem 1rem rgba($color-black,0.3);
 }
 
+.btn-white:link,
+.btn-white:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $color-white;
+    color: $color-grey-dark;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    transition: all 0.2s;
+    border-radius: 10rem;
+    animation: moveInBottom 2s ease-out;
+    font-size: 1.6rem;
+}
+.btn-white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black,0.3);
+}
+.btn-white:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black,0.3);
+}
+
 /*=========================
 Navigation
 ===========================*/
@@ -96,7 +118,7 @@ Navigation
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        background-image: linear-gradient(to bottom,$color-primary, $color-primary-light);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86 ,0, 0.07, 1);
 
@@ -223,11 +245,13 @@ Header
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    
 
     // .logo-box{
     //     position: absolute;
     //     top: 2rem;
     //     left: 4rem; 
+       
 
     // }
     .header-text-box {
@@ -235,6 +259,7 @@ Header
         text-align: center;
         .logo {
             height: 25rem;
+            animation: moveInRight 2s ease-out;
         }
 
         .heading-primary {
@@ -262,27 +287,7 @@ Header
     }
 }
 
-.btn-white:link,
-.btn-white:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: $color-white;
-    color: $color-grey-dark;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    transition: all 0.2s;
-    border-radius: 10rem;
-    animation: moveInBottom 2s ease-out;
-    font-size: 1.6rem;
-}
-.btn-white:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black,0.3);
-}
-.btn-white:active {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($color-black,0.3);
-}
+
 
 
 /*=========================
