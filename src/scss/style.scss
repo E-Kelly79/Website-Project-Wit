@@ -463,16 +463,16 @@ Tours
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         &-1{
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, lighten($color-secondary-light, 20%), lighten($color-secondary-dark, 20%)), url(../img/nature3.jpg);
 
         }
 
         &-2{
-            background-image:  linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
+            background-image:  linear-gradient(to right bottom, darken($color-primary-light, 20%), darken($color-primary-dark,20%)), url(../img/nature1.jpg);
         }
 
         &-3{
-            background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
+            background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nature2.jpg);
         }
     }
 
