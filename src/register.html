@@ -15,7 +15,6 @@
 		.card-container.card {
 			max-width: 350px;
 			padding: 40px 40px;
-			margin: auto auto;
 		}
 		
 		.btn {
@@ -33,21 +32,22 @@
 		.card {
 			background-color: #F7F7F7;
 			/* just in case there no content*/
-			padding: 20px 25px 30px;
-			margin-top: 10%;
+			padding: 2rem 2.5rem 3rem;
+			margin: 0 auto 2.5rem;
+			margin-top: 5rem;
 			/* shadows and rounded borders */
-			-moz-border-radius: 2px;
-			-webkit-border-radius: 2px;
-			border-radius: 2px;
+			-moz-border-radius: 1rem;
+			-webkit-border-radius: 1rem;
+			border-radius: 1rem;
 			-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 			-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 		}
 		
 		.profile-img-card {
-			width: 96px;
-			height: 96px;
-			margin: 0 auto 10px;
+			width: 10rem;
+			height: 10rem;
+			margin: 0 auto 1rem;
 			display: block;
 			-moz-border-radius: 50%;
 			-webkit-border-radius: 50%;
@@ -58,10 +58,10 @@
  */
 		
 		.profile-name-card {
-			font-size: 16px;
+			font-size: 1.6rem;
 			font-weight: bold;
 			text-align: center;
-			margin: 10px 0 0;
+			margin: 1rem 0 0;
 			min-height: 1em;
 		}
 		
@@ -69,8 +69,8 @@
 			display: block;
 			color: #404040;
 			line-height: 2;
-			margin-bottom: 10px;
-			font-size: 14px;
+			margin-bottom: 1rem;
+			font-size: 1.6rem;
 			text-align: center;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -81,10 +81,12 @@
 		}
 		
 		.form-signin #inputEmail,
-		.form-signin #inputPassword {
+		.form-signin #inputPassword,
+		.form-signin #firstName,
+		.form-signin #lastName {
 			direction: ltr;
-			height: 44px;
-			font-size: 16px;
+			height: 4.4rempx;
+			font-size: 1.6rem;
 		}
 		
 		.form-signin input[type=email],
@@ -144,7 +146,7 @@
 	</style>
 </head>
 
-<body >
+<body>
 	<!--Disclaimer-->
 	<div class="modal fade" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
@@ -167,7 +169,6 @@
 			</div>
 		</div>
 	</div>
-	
 	<div class="container-fluid">
 		<div class="navigation">
 			<input type="checkbox" class="navigation_checkbox" id="navi-toggle">
@@ -184,35 +185,25 @@
 				</ul>
 			</nav>
 		</div>
-		
-		<div class="login-wrapper d-flex justify-content-center align-items-center">
 		<div class="container">
-			<div class="col-md-12">
-				<h1 class="text-center text-uppercase display-1">Login</h1>
-			</div>
 			<div class="card card-container">
-				 <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+				<!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> --><img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
 				<p id="profile-name" class="profile-name-card"></p>
 				<form class="form-signin"> <span id="reauth-email" class="reauth-email"></span>
-					<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-					<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-					<div id="remember" class="checkbox">
-						<label>
-							<input type="checkbox" value="remember-me"> Remember me </label>
-					</div>
-					<button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+					<input type="text" id="firstName" class="form-control" placeholder="First Name" required autofocus>
+					<input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
+					<input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required>
+					<input type="text" id="inputPassword" class="form-control" placeholder="Password" required>
+					<button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Register</button>
 				</form>
-				<!-- /form --><a href="#" class="forgot-password">
-                Forgot the password?
-            </a>
+				<!-- /form -->
+				<p>All ready a member click <a href="#" class="forgot-password">here to sign in</a></p>
 				<button class="btn btn-success btn-lg mt-4" id="disclaimer" data-toggle="modal" data-target="#disclaimerModal">Disclaimer</button>
 			</div>
 			<!-- /card-container -->
 		</div>
 	</div>
 	<!-- /container -->
-	</div>
-	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

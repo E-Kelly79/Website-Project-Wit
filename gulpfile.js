@@ -20,10 +20,10 @@ gulp.task('js', function(){
 //Watch sass and server
 gulp.task('serve', ['sass'], function(){
     browserSync.init({
-        server: './src'
+        server: './'
     });
     gulp.watch(['node_modules/bootstrap/scss/bootstrao.scss', 'src/scss/*.scss'], ['sass']);
-    gulp.watch('srs/*.html').on('change', browserSync.reload);
+    gulp.watch('*.html').on('change', browserSync.reload);
 });
 
 //Move fonts folder to src/fonts

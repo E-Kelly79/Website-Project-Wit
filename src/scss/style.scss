@@ -1,6 +1,7 @@
 //Variables 
 @import "variables";
 
+
 * {
     box-sizing: inherit;
 }
@@ -17,6 +18,8 @@ body {
     padding: 2rem;
     box-sizing: border-box;
 }
+
+
 
 /*=========================
 Helpers
@@ -94,6 +97,10 @@ Navigation
 ===========================*/
 .navigation{
     &_checkbox{
+        display: none;
+    }
+
+    &_infoCheckbox{
         display: none;
     }
 
@@ -820,6 +827,21 @@ About Us
     
 }
 
+.login-wrapper{
+	position: relative;
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba($summer-green, 0.7), rgba($summer-orange, 0.7)), url("../img/hero2.jpg");
+    background-size: cover;
+    background-position: bottom;
+	h1{
+		margin-bottom: 2rem;
+		color: $color-white;
+		font-weight: bold;
+	}
+	
+	
+}
+
 
 
 
@@ -868,3 +890,7 @@ About Us
         transform: translateY(0);
     }
 }
+
+
+
+

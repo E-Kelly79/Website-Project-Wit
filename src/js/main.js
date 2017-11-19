@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $('#disclaimerModal').modal();
 
+    $('[data-toggle="tooltip"]').tooltip({
+        html :true
+    });
+
     // Satellite map
     function satellite_map() {
         var var_location = new google.maps.LatLng(48.856847, 2.296832);
@@ -20,5 +24,7 @@ $(document).ready(function(){
             title: "Paris, France"
         });
     }
+
+    
 
 }); 

@@ -84,6 +84,9 @@ Navigation
 .navigation_checkbox {
   display: none; }
 
+.navigation_infoCheckbox {
+  display: none; }
+
 .navigation_button {
   background-color: #fff;
   height: 7rem;
@@ -574,6 +577,17 @@ About Us
     position: absolute;
     bottom: 40px;
     padding-left: 20px; }
+
+.login-wrapper {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(34, 193, 195, 0.7), rgba(253, 187, 45, 0.7)), url("../img/hero2.jpg");
+  background-size: cover;
+  background-position: bottom; }
+  .login-wrapper h1 {
+    margin-bottom: 2rem;
+    color: #fff;
+    font-weight: bold; }
 
 /*Animations*/
 @keyframes moveInLeft {
